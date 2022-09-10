@@ -6,7 +6,7 @@ import { Component, Input, Output, OnInit, ChangeDetectionStrategy, EventEmitter
   styleUrls: ['./chip-option.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ChipOptionComponent {
+export class ChipOptionComponent { // show dropdown list of chips 
   @Input() dataList: string[] = [];
 
   @Output() onItemSelected: EventEmitter<any> = new EventEmitter(true);

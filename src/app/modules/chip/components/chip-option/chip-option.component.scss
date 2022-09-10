@@ -1,12 +1,12 @@
-ul {
+.options-list {
     border: 1px solid #bfbfbf;
     border-top: unset;
     border-radius: 5px;
-    margin:0 5px;
+    margin: 0 5px;
     padding: 5px;
     list-style: none;
 
-    li {
+    .option-item {
         padding: 5px;
         cursor: pointer;
         display: inline-block;
@@ -15,10 +15,12 @@ ul {
         font-weight: 600;
         font-size: 0.875rem;
         font-family: system-ui;
-        a{
+
+        .option-text {
             color: black;
             text-decoration: none;
         }
+
         &:hover {
             background-color: #bfbfbf;
             color: black;

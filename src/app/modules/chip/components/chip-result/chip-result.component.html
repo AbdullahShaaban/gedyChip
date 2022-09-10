@@ -1,9 +1,9 @@
 <div class="selected-value-container" *ngIf="selectedList.length > 0">
-    <ul>
-        <li *ngFor="let selectedChip of selectedList;let i =index;">
-            <a class="input-result" href="javascript:void(0)" (click)="deSelect(selectedChip,i)">
+    <ul class="list-value">
+        <li class="item-value" *ngFor="let selectedChip of selectedList;let i =index;">
+            <a class="text-value" href="javascript:void(0)" (click)="deSelect(selectedChip,i)">
                 {{selectedChip}}
-                <span class="close">&times;</span>
+                <span class="close-icon">&times;</span>
             </a>
         </li>
     </ul>

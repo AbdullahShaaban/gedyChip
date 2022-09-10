@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   templateUrl: './chip-result.component.html',
   styleUrls: ['./chip-result.component.scss']
 })
-export class ChipResultComponent implements OnInit {
+export class ChipResultComponent implements OnInit { // show chip result as chips in input field
   @Input() selectedList: string[] = [];
   @Output() onDeselect: EventEmitter<any> = new EventEmitter();
   constructor() { }

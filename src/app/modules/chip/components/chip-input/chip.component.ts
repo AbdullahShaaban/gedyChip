@@ -19,13 +19,22 @@ import { ChipBase } from '../../_model/chipBase.type';
 // our presentational layer
 
 export class ChipComponent implements OnInit, ControlValueAccessor {
+  // chips container for chip-options and chips result which maybe used in another building blocks
+ 
   @Input() chipData!: ChipBase;
+ 
   @ViewChild('chipReference') chipReference!: ElementRef;
+  
   showList: boolean = false;
+  
   selectedList: [] = [];
+  
   isChanged = false;
+  
   value: [] = [];
+  
   disabled = false;
+  
   backupList: string[] = []
 
   onChange = (value: []) => { };
@@ -70,7 +79,7 @@ export class ChipComponent implements OnInit, ControlValueAccessor {
   }
 
   onInputFocus(evt: any) {
-    setTimeout(() => { // callback function to load data from backend in half second
+    setTimeout(() => { // callback function to load data from backend in half second (optional)
       this.showList = true;
     }, 500);
   }

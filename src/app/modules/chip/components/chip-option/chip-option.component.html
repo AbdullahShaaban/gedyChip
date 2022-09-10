@@ -1,6 +1,6 @@
-<ul>
-    <li *ngFor="let chip of dataList;let i =index;" (click)="onSelect(chip,i)">
-        <a href="javascript:void(0)">{{chip}}
+<ul class="options-list">
+    <li class="option-item" *ngFor="let chip of dataList;let i =index;" (click)="onSelect(chip,i)">
+        <a class="option-text" href="javascript:void(0)">{{chip}}
         </a>
     </li>
 </ul>

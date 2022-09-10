@@ -1,4 +1,4 @@
-ul {
+.list-value {
     border: 1px solid #bfbfbf;
     border-radius: 5px 0 0 5px;
     border-width: 1px 0 1px 1px;
@@ -8,19 +8,19 @@ ul {
     margin-left: 5px;
     padding-left: 10px;
 
-    li {
+    .item-value {
         border: 1px solid #bfbfbf;
         background-color: #bfbfbf;
         padding: 5px;
         margin: 5px 5px 5px 0;
 
-        a {
+        .text-value {
             color: #000;
             text-decoration: none;
             display: flex;
             justify-content: center;
 
-            span {
+            .close-icon {
                 padding-left: 10px;
                 font-weight: bolder;
 
